@@ -19,15 +19,15 @@ namespace CSharpDenemeler
 
 
 
-        public int DmgDeal(IMonster enemyMonster) //Default Method
+        public void DmgDeal(IMonster enemyMonster) //Default Method
         {
             
             int hpRemain = enemyMonster.Hp - this.Dmg;
-            
+            enemyMonster.Hp -= this.Dmg;
             Console.WriteLine("enemy hp: "+enemyMonster.Hp+
                 " \nyour dmg: "+
                 Dmg+"\n"+hpRemain+ " hp remains");
-            return hpRemain;
+            
         }
 
 
