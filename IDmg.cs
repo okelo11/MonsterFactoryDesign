@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Factory
 {
-    public enum MonsterEnum
+    public interface ICanDmg
     {
-        Spider,
-        Bee
+        public void DmgDeal(IGetDmg enemyMonster);
+     
     }
 }

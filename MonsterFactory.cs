@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpDenemeler
+namespace Factory
 {
     public class MonsterFactory
     {
@@ -27,7 +27,7 @@ namespace CSharpDenemeler
             }
             else
             {
-                throw new ArgumentException("gecersiz giris");
+                throw new Exception("Wrong entry");
             }
 
             return monster;

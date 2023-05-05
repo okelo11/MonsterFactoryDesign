@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Factory
 {
-    public enum MonsterEnum
+    public interface IGetDmg
     {
-        Spider,
-        Bee
+        //If implements this interface,your monster can get dmg.Otherwise it will be Immortal!!
     }
 }
