@@ -19,7 +19,6 @@ namespace Factory
         public int Dmg { get { return _dmg; } set { _dmg = value; } }
         public MonsterEnum MonsterType { get { return _monsterType; } set { _monsterType=value; } }
 
-        public int GORBENIIII { get; set; } = 4;
 
 
         public Bee(MonsterEnum MonsterType, int Hp, int Dmg)
